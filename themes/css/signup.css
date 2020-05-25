@@ -1,0 +1,14 @@
+#signup-body {
+    height: 100vh;
+    display: flex;
+    margin: auto;
+}
+
+.signup-container {
+    min-width: 500px;
+    margin: auto; 
+}
+
+#signup-form {
+    margin-top: 40px;
+}

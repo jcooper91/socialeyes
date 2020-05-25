@@ -1,0 +1,11 @@
+#login-body {
+    height: 100vh;
+    display: flex;
+    margin: auto;
+}
+
+.login-container {
+    min-width: 500px;
+    margin: auto; 
+}
+
