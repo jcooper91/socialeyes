@@ -10,28 +10,22 @@
             <h5 class="center-align">Please register your details for socialeyes</h5>
             <form id="signup-form" method="post" action="<?=base_url("user/signup");?>">
                 <div class="input-field">
-                    <label for="firstname">Firstname</label>
-                    <input type="text" id="firstname" name="firstname">
+                    <input type="text" id="firstname" name="firstname" placeholder="Firtname">
                 </div>
                 <div class="input-field">
-                    <label for="lastname">Lastname</label>
                     <input type="text" id="lastname" name="lastname">
                 </div>
                 <div class="input-field">
-                    <label for="username">Username</label>
                     <input type="text" id="username" name="username">
                 </div>
                 <div class="input-field">
-                    <label for="email">Email (Use this to login in)</label>
                     <input type="text" id="email" name="email">
                 </div>
                 <div class="input-field">
-                    <label for="pssword">Password</label>
-                    <input type="text" id="password" name="password">
+                    <input type="password" id="password" name="password">
                 </div>
                 <div class="input-field">
-                    <label for="confirm_pssword">Confirm Password</label>
-                    <input type="text" id="confirm_pssword" name="confirm_pssword">
+                    <input type="password" id="confirm_pssword" name="confirm_pssword">
                 </div>
                 <input type="hidden" name="action" value="signup" />
                  <button class="btn waves-effect waves-light" type="submit">Submit</button>

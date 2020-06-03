@@ -33,7 +33,7 @@ class Database extends \CodeIgniter\Database\Config
 		'DSN'      => '',
 		'hostname' => 'localhost',
 		'username' => 'postgres',
-		'password' => 'fabregas4',
+		'password' => 'Fabregas4',
 		'database' => 'socialeyes',
 		'DBDriver' => 'postgre',
 		'DBPrefix' => '',

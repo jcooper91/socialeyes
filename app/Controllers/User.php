@@ -6,7 +6,6 @@ class User extends BaseController {
     
     public function __construct() {
          parent::__construct();
-         $this->load
      }
 
      public function index() {
@@ -15,7 +14,8 @@ class User extends BaseController {
      }
 
      public function signup() {
-         $data = [];
+         $data = array();
+         $userModel = model('UserModel');
 
          $action = $this->request->getPost('action');
          if(!empty($action) && $action === 'signup') {
@@ -33,7 +33,7 @@ class User extends BaseController {
                  );
                   $this->session->setFlashdata(get_class($this), $response);
              }
-             
+             $userModel->createUser($firstname, $lastname, $username, $email, $password);
          }
 
          $data['page_title'] = 'Create User';
