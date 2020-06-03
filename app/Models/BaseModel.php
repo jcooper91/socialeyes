@@ -17,6 +17,10 @@ class BaseModel extends Model {
         $this->builder = null;
     }
     
+    protected function generateToken($salt = null) {
+        return md5(time() . 'social'  .mt_rand(0,99) . 'eyes' . $salt);
+    }
+    
     protected function insertRow($data) {
         $query = $this->builder->insert($data);
         if(empty($query)) return false;
